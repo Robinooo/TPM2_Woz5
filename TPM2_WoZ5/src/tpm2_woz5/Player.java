@@ -7,9 +7,6 @@ package tpm2_woz5;
 
 
 import java.util.ArrayList;
-import objects.Item;
-import objects.Weapon;
-
 
 /**
  *
@@ -18,12 +15,12 @@ import objects.Weapon;
 public class Player {
     private String pseudoPlayer;
     private ArrayList<Weapon> WeaponPlayer;
-    private int strenghtPlayer;
+    private int force;
 
     public Player(String pseudo, ArrayList<Weapon> arme, int force) {
         this.pseudoPlayer = pseudo;
         this.WeaponPlayer = arme;
-        this.strenghtPlayer = force;
+        this.force = force;
     }
 
     
@@ -44,11 +41,11 @@ public class Player {
     }
 
     public int getForce() {
-        return strenghtPlayer;
+        return force;
     }
 
     public void setForce(int force) {
-        this.strenghtPlayer = force;
+        this.force = force;
     }
 
     
